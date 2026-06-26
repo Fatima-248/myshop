@@ -1,0 +1,132 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.custom-footer {
+  margin-top: auto;
+  background: rgb(9 20 38);
+  color: white;
+  padding: 40px 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  min-width: 200px;
+  flex: 1;
+}
+
+.footer-logo {
+  color: #f9a826;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.footer-col h3 {
+  color: #f9a826;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.footer-col p {
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  color: #d0d0d0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #f9a826;
+}
+
+.footer-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icons i {
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.footer-icons i:hover {
+  color: #f9a826;
+}
+
+@media (max-width: 768px) {
+  .custom-footer {
+    padding: 40px 30px;
+    width: 100%;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+
+  .footer-col {
+    min-width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-footer {
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .footer-col {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+}
